@@ -1,36 +1,6 @@
 version: "3"
 services:
 
-#  frontend:
-#    build:
-#      context: ./
-#      dockerfile: ./docker/config/frontend/Dockerfile
-#    depends_on:
-#      - nodejs
-#    volumes:
-#      - ./node-react/frontend:/usr/src/app/
-#      - ./docker/config/frontend/init.sh:/init.sh
-#    ports:
-#      - "80:3000"
-#    networks:
-#      - internal
-#
-#  nodejs:
-#    build:
-#      context: ./
-#      dockerfile: ./docker/config/nodejs/Dockerfile
-#    depends_on:
-#      - symfony
-#    ports:
-#      - "3001:3001"
-#    environment:
-#      SYMFONY_HOST: http://symfony/
-#    volumes:
-#      - ./node-react/nodejs:/usr/src/app/
-#      - ./docker/config/nodejs/init.sh:/init.sh
-#    networks:
-#      - internal
-
   database:
     build:
       context: ./
